@@ -1,3 +1,3 @@
 import subprocess
-result = subprocess.run(['./hello_contrib.py'], capture_output=True, text=True)
+result = subprocess.run(['./dist/hello_contrib'], capture_output=True, text=True)
 print(result.stdout)
