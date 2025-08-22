@@ -25,6 +25,8 @@ jobs:
     - name: Build Python
       run: pyinstaller --onefile runccode.py
     - name: Set permissions
-      run: sudo chmod +x hello_contib runccode
+      run: sudo chmod +x hello_contrib dist/runccode
     - name: Run executable python
-      run: ./runcode
+      run: |
+        cd dist
+        ./runccode
